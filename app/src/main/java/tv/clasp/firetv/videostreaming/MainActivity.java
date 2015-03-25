@@ -108,7 +108,6 @@ public class MainActivity extends ActionBarActivity {
         });
     }
 
-
     @Override
     protected void onPause() {
         tearDown();

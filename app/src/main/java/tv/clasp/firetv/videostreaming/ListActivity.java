@@ -40,7 +40,7 @@ public class ListActivity extends ActionBarActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(ListActivity.this, MainActivity.class);
+                Intent i = new Intent(ListActivity.this, BrightCoveVideoActivity.class);
                 i.putExtra("link", videos.get(position).url);
                 startActivity(i);
             }
