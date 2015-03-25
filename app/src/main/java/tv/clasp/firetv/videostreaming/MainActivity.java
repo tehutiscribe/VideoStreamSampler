@@ -26,12 +26,8 @@ public class MainActivity extends ActionBarActivity {
         final Uri adUri = Uri.parse(url);
 
         videoView = (VideoView) findViewById(R.id.ad_videoView);
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                videoView.setVideoURI(adUri);
-            }
-        });
+        videoView.setVideoURI(adUri);
+
         videoView.setOnInfoListener(new MediaPlayer.OnInfoListener() {
             @Override
             public boolean onInfo(MediaPlayer mp, int what, int extra) {
